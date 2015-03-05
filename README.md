@@ -5,7 +5,9 @@ At this time, it installs the controller from the "rapid" release channel.
 To start the controller, launch a container like this:
 
 ```
-docker run -d --name unify -p 8081:8081 -p 8080:8080 -p 8443:8443 -p 8880:8880 -p 8843:8843 zumbrunnen/unifi
+docker run -d --name unify \
+  -p 8081:8081 -p 8080:8080 -p 8443:8443 -p 8880:8880 -p 8843:8843 \
+  zumbrunnen/unifi
 ```
 
 
