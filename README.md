@@ -1,6 +1,6 @@
 # Docker Image for Ubiquiti Network's UniFi Controller
 
-At this time, it installs the controller from the "rapid" release channel.
+Installs the controller from the stable release channel (at them moment: 4.6.6).
 
 To start the controller, launch a container like this:
 
