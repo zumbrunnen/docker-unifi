@@ -1,6 +1,6 @@
 # Docker Image for Ubiquiti Network's UniFi Controller
 
-At this time, it installs the controller from the "rapid" release channel.
+Installs the UniFi controller with MongoDB.
 
 To start the controller, launch a container like this:
 
