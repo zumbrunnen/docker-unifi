@@ -1,12 +1,14 @@
 # Docker Image for Ubiquiti Network's UniFi Controller
 
-Installs the controller from the stable release channel (at them moment: 4.6.6).
+Installs the controller from the stable release channel (at them moment: 4.7.6).
 
 To start the controller, launch a container like this:
 
 ```
 docker run -d --name unifi \
   -p 8081:8081 -p 8080:8080 -p 8443:8443 -p 8880:8880 -p 8843:8843 \
+  -v /datadir/of/your/choice:/usr/lib/unifi/data \
+  --restart=always \
   zumbrunnen/unifi
 ```
 
