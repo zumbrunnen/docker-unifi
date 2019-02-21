@@ -4,7 +4,7 @@ build_image:
   - docker:dind
   script:
     - docker login -u $CI_REGISTRY_USER -p $CI_BUILD_TOKEN $CI_REGISTRY
-    - docker build -t $CI_REGISTRY/zumbrunnen/docker-unifi:latest .
-    - docker push $CI_REGISTRY/zumbrunnen/docker-unifi:latest
+    - docker build -t $CI_REGISTRY/zumbrunnen/unifi:latest .
+    - docker push $CI_REGISTRY/zumbrunnen/unifi:latest
   only:
     - master
