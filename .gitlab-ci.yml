@@ -1,5 +1,9 @@
+stages:
+- build
+
 build_image:
-  image: docker:git
+  stage: build
+  image: docker:stable
   services:
   - docker:dind
   script:
