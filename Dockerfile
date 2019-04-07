@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 LABEL maintainer="David Zumbrunnen <zumbrunnen@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.10.20
+ENV UNIFI_VERSION 5.10.21
 
 RUN apt-get update && apt-get -y install binutils libcap2 curl openjdk-8-jre-headless jsvc gnupg ca-certificates
 
